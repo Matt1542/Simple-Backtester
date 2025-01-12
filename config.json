@@ -1,0 +1,38 @@
+{
+  "data_paths": {
+    "variable_1_path": "FTSE MIB Historical Data.csv",
+    "independent_price_path": "IT000548098=MI Overview.csv"
+  },
+  "column_mappings": {
+    "date": "Date",
+    "dependent_parameter": "Change FTSE %",
+    "independent_parameter": "Prezzo BTP",
+    "returns_column": "Next_Day_Return",
+    "change_independent": "Change FTSE %"
+  },
+  "delimiters": {
+    "variable_1_delimiter": ",",
+    "independent_price_delimiter": ","
+  },
+  "date_formats": {
+    "variable_1_format": "%m/%d/%Y",
+    "independent_price_format": "%m/%d/%Y"
+  },
+  "analysis_parameters": {
+    "lower_bound": 0.5,
+    "upper_bound": 1,
+    "z_score_threshold": 1.96,
+    "periods": [1,2,3,4,5,6,7],
+    "risk_free_rate": 0.0001,
+    "transaction_cost": 3.8,
+    "interval_length": 0.5,
+    "step": 0.1,
+    "min_signals": 50,
+    "jarque_bera_p_value_threshold": 0.1,
+    "iterations_per_step_calculation": 5000,
+    "alpha": 0.4,
+    "beta": 0.1,
+    "gamma" :0.1,
+    "zeta" :0.4
+  }
+}
